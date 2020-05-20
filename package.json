@@ -4,13 +4,16 @@
   "description": "An API designed to handle the users and their accounts data ",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "node app.js",
+    "server-start": "pm2 start app.js -i max"
   },
   "author": "Ahmed Medhat",
   "license": "ISC",
   "dependencies": {
+    "@google-cloud/nodejs-repo-tools": "^3.3.0",
     "@hapi/joi": "^17.1.0",
     "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1",
